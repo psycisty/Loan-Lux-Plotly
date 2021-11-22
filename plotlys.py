@@ -14,7 +14,9 @@ pd.options.mode.chained_assignment = None
 
 app = dash.Dash()
 
-df = pd.read_csv('D:\Future\Jago\lpetrocelli-retail-banking-demo-data\LuxuryLoanPortfolio.csv')
+#df = pd.read_csv('D:\Future\Jago\lpetrocelli-retail-banking-demo-data\LuxuryLoanPortfolio.csv')
+df = pd.read_csv('https://raw.githubusercontent.com/psycisty/Loan-Lux-Plotly/main/LuxuryLoanPortfolio.csv')
+
 df2 = df[['loan_id','funded_amount','funded_date','duration years','duration months','10 yr treasury index date funded'
     ,'interest rate','interest rate percent','payments','total past payments','loan balance','property value','purpose','title','employment length',
     'TOTAL UNITS','BUILDING CLASS CATEGORY','BUILDING CLASS AT PRESENT','TAX CLASS AT TIME OF SALE']]
